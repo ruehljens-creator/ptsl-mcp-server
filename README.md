@@ -18,7 +18,7 @@ It differs from other Pro Tools MCP servers in one point: it knows **every PTSL 
 
 ## Requirements
 
-- Pro Tools 2023.6 or newer with PTSL enabled (Setup > Peripherals > Scripting, or via the developer setting). Tested with Pro Tools 2026.4 (PTSL version 2026).
+- A Pro Tools version that ships the PTSL scripting server (introduced with Pro Tools 2022.9). Tested with Pro Tools 2026.4 (PTSL version 2026).
 - Python 3.10+
 - `py-ptsl`, `mcp`, `grpcio`, `protobuf` (installed automatically)
 
