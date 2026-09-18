@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ptsl": {
+      "command": "ptsl-mcp-server",
+      "env": {
+        "PTSL_ADDRESS": "localhost:31416",
+        "PTSL_MCP_TIMEOUT": "20",
+        "PTSL_MCP_READ_ONLY": "0"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ptsl": {
+      "command": "ptsl-mcp-server",
+      "env": {
+        "PTSL_ADDRESS": "192.168.1.50:31416",
+        "PTSL_MCP_LOCAL_ROOT": "/Volumes/audio-share",
+        "PTSL_MCP_REMOTE_ROOT": "S:\\audio-share"
+      }
+    }
+  }
+}

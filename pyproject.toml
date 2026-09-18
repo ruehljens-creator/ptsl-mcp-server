@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptsl-mcp-server"
+version = "0.1.0"
+description = "MCP server that exposes every Pro Tools PTSL command to AI assistants, with hard timeouts and path mapping."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "ruehljens-creator" }]
+keywords = ["pro tools", "ptsl", "mcp", "model context protocol", "avid", "audio"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+  "mcp>=1.2",
+  "py-ptsl>=601.0.0",
+  "grpcio",
+  "protobuf",
+]
+
+[project.scripts]
+ptsl-mcp-server = "ptsl_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/ruehljens-creator/ptsl-mcp-server"
+
+[tool.setuptools.packages.find]
+include = ["ptsl_mcp*"]
